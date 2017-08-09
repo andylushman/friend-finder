@@ -1,0 +1,24 @@
+{
+  "name": "13friend-finder",
+  "version": "1.0.0",
+  "description": "This full-stack site takes in results from users' surveys, then compares their answers with those from other users.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andylushman/friend-finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andylushman/friend-finder/issues"
+  },
+  "homepage": "https://github.com/andylushman/friend-finder#readme"
+}
