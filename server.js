@@ -16,7 +16,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-
+// Expose the public directory to access CSS files
+app.use(express.static(path.join(__dirname, './app/public')));
 
 /***************
 FUNCTIONS
