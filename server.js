@@ -8,7 +8,7 @@ var path = require("path");
 
 //configure express application
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 //configure bodyParser
 app.use(bodyParser.json());
@@ -16,8 +16,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// Expose the public directory to access CSS files
-app.use(express.static(path.join(__dirname, './app/public')));
+// Expose the public directory to access HTML and CSS files
+app.use(express.static(path.join(__dirname, "./app/public")));
 
 /***************
 FUNCTIONS
