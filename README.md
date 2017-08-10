@@ -5,7 +5,7 @@ Friend Finder Application!
 ----------
 
 
-This friend finder application takes input from the user and creates a best match, based on their answers.
+This friend finder application takes input from the user and creates a best match based on their answers.
 
 The application is implemented using a Node.js and Express server on the back end and the Materialize CSS framework on the front end.
 
