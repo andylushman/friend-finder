@@ -16,12 +16,12 @@ module.exports = (app) => {
 	app.post("/api/friends", (req, res) => {
 		//Input object
 		var userInput = req.body;
-		// console.log('userInput = ' + JSON.stringify(userInput));
+		// console.log("userInput = " + JSON.stringify(userInput));
 
 		var userResponses = userInput.scores;
-		// console.log('userResponses = ' + userResponses);
+		// console.log("userResponses = " + userResponses);
 
-		// Compute best friend match
+		//Best friend match
 		var matchName = "";
 		var matchImage = "";
 		var totalDifference = 10000; // Make the initial value big for comparison
@@ -35,13 +35,13 @@ module.exports = (app) => {
 			for (var j = 0; j < userResponses.length; j++) {
 				diff += Math.abs(friends[i].scores[j] - userResponses[j]);
 			}
-			// console.log('diff = ' + diff);
+			// console.log("diff = " + diff);
 
 			// If lowest difference, record the friend match
 			if (diff < totalDifference) {
-				// console.log('Closest match found = ' + diff);
-				// console.log('Friend name = ' + friends[i].name);
-				// console.log('Friend image = ' + friends[i].photo);
+				// console.log("Closest match found = " + diff);
+				// console.log("Friend name = " + friends[i].name);
+				// console.log("Friend image = " + friends[i].photo);
 
 				totalDifference = diff;
 				matchName = friends[i].name;
