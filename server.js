@@ -16,6 +16,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+// Add the application routes
+require(path.join(__dirname, "./app/routing/apiRoutes"))(app);
+require(path.join(__dirname, "./app/routing/htmlRoutes"))(app);
+
 // Expose the public directory to access HTML and CSS files
 app.use(express.static(path.join(__dirname, "./app/public")));
 
