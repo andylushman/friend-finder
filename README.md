@@ -21,7 +21,7 @@ To check out friend finder on heroku you can click [here](https://sheltered-rive
 
 To install the application follow the instructions below:
 
-git clone https://github.com/andylushman/friend-finder  
+git clone https://github.com/andylushman/friend-finder.git     
 cd friend-finder  
 npm install  
 
